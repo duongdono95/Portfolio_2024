@@ -93,6 +93,7 @@ const NavBar = () => {
         padding: "20px",
         position: shouldBeFixed ? "sticky" : undefined,
         top: shouldBeFixed ? 0 : undefined,
+        zIndex: 100,
       }}
     >
       <div

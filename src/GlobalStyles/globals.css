@@ -153,11 +153,17 @@ html *::-webkit-scrollbar-track {
 .animated-rotation {
   animation: rotating 2s linear infinite;
 }
-.text-circle-rotating {
-  animation: rotating 12s linear infinite;
+.text-circle-rotating-slow {
+  animation: rotating 13s linear infinite;
+}
+.text-circle-rotating-medium {
+  animation: rotating-reverse 11s linear infinite;
+}
+.text-circle-rotating-fast {
+  animation: rotating 9s linear infinite;
 }
 .text-circle-coloring {
-  animation: coloring 12s linear infinite;
+  animation: coloring 8s linear infinite;
   font-size: 15px;
 }
 
@@ -170,17 +176,35 @@ html *::-webkit-scrollbar-track {
   }
 }
 
+@keyframes rotating-reverse {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes coloring {
   0% {
     fill: #fff;
   }
   35% {
-    fill: var(--primary);
+    fill: var(--primary05);
   }
   75% {
-    fill: var(--secondary);
+    fill: var(--secondary05);
   }
   100% {
     fill: #fff;
   }
+}
+.animated-circle-color-change {
+  background: radial-gradient(
+    circle,
+    var(--primary) 0%,
+    var(--secondary05) 40%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

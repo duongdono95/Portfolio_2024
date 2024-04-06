@@ -1,5 +1,6 @@
 import NavBar from "./_components/NavBar";
 import SectionAboutMe from "./_components/SectionAboutMe";
+import SectionContact from "./_components/SectionContact";
 import SectionExperience from "./_components/SectionExperience";
 import SectionHome from "./_components/SectionHome";
 import SectionProjects from "./_components/SectionProjects";
@@ -14,6 +15,7 @@ export default function Home() {
       <SectionTechStack />
       <SectionExperience />
       <SectionProjects />
+      <SectionContact />
     </div>
   );
 }
