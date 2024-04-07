@@ -99,8 +99,9 @@ const NavBar = () => {
       <div
         className="mx-auto w-1/2 min-w-96 px-5 py-3 flex justify-evenly sm:gap-5 z-20 rounded-[50px]"
         style={{
-          border: "1px solid var(--primary02)",
+          border: "2px solid var(--primary04)",
           backdropFilter: "blur(10px)",
+          backgroundColor: "var(--white01)",
         }}
       >
         {[
