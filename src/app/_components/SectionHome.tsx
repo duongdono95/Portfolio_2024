@@ -2,7 +2,12 @@ import AnimatedBayMax from "@/components/AnimatedBayMax";
 import GradientBall from "@/components/GradientBall";
 import Logo from "@/components/Logo";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button, IconButton, Link } from "@mui/material";
+import {
+  Button,
+  IconButton,
+  Link,
+  Tooltip,
+} from "@mui/material";
 import {
   FileSpreadsheet,
   Github,
@@ -18,48 +23,66 @@ const SectionHome = () => {
       <div className="flex items-center justify-between max-w-7xl w-full mx-auto xl:py-5">
         <Logo />
         <div className="flex gap-6 ">
-          <Link href={"https://github.com/duongdono95"}>
-            <IconButton
-              sx={{
-                bgcolor: "var(--white02)",
-                ":hover": {
-                  bgcolor: "var(--white05)",
-                  boxShadow: "2px 2px 10px var(--white05)",
-                },
-              }}
-            >
-              <Github size={20} />
-            </IconButton>
+          <Link
+            href={"https://github.com/duongdono95"}
+            target="_blank"
+          >
+            <Tooltip title="Github">
+              <IconButton
+                sx={{
+                  bgcolor: "var(--white02)",
+                  ":hover": {
+                    bgcolor: "var(--white05)",
+                    boxShadow:
+                      "2px 2px 10px var(--white05)",
+                  },
+                }}
+              >
+                <Github size={20} />
+              </IconButton>
+            </Tooltip>
           </Link>
           <Link
             href={
               "https://www.linkedin.com/in/duong-dono-a644b8189/"
             }
+            target="_blank"
           >
-            <IconButton
-              sx={{
-                bgcolor: "var(--white02)",
-                ":hover": {
-                  bgcolor: "var(--white05)",
-                  boxShadow: "2px 2px 10px var(--white05)",
-                },
-              }}
-            >
-              <Linkedin size={20} />
-            </IconButton>
+            <Tooltip title="Linkedin">
+              <IconButton
+                sx={{
+                  bgcolor: "var(--white02)",
+                  ":hover": {
+                    bgcolor: "var(--white05)",
+                    boxShadow:
+                      "2px 2px 10px var(--white05)",
+                  },
+                }}
+              >
+                <Linkedin size={20} />
+              </IconButton>
+            </Tooltip>
           </Link>
-          <Link href={""}>
-            <IconButton
-              sx={{
-                bgcolor: "var(--white02)",
-                ":hover": {
-                  bgcolor: "var(--white05)",
-                  boxShadow: "2px 2px 10px var(--white05)",
-                },
-              }}
-            >
-              <FileSpreadsheet size={20} />
-            </IconButton>
+          <Link
+            href={
+              "https://drive.google.com/file/d/1bTYgvjN0iOA9N5gOchrWpDPucgdzkPvw/view"
+            }
+            target="_blank"
+          >
+            <Tooltip title="CV">
+              <IconButton
+                sx={{
+                  bgcolor: "var(--white02)",
+                  ":hover": {
+                    bgcolor: "var(--white05)",
+                    boxShadow:
+                      "2px 2px 10px var(--white05)",
+                  },
+                }}
+              >
+                <FileSpreadsheet size={20} />
+              </IconButton>
+            </Tooltip>
           </Link>
         </div>
       </div>

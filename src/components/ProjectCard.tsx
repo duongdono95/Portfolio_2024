@@ -18,22 +18,39 @@ const ProjectCard = ({ project }: Props) => {
       style={{ backgroundColor: "var(--white01)" }}
     >
       <ImageSlider images={project.imageUrls} />
-      <div className={"flex flex-col gap-5 max-w-[600px] max-lg:px-5"}>
+      <div
+        className={
+          "flex flex-col gap-5 max-w-[600px] max-lg:px-5"
+        }
+      >
         <div className={"flex items-center gap-3"}>
-          <p className={"text-4xl"}>{project.title} -</p>
+          <p className={"text-4xl"}>
+            <span className="opacity-50">DEMO</span> -{" "}
+            {project.title} -
+          </p>
           {project.status === "available" ? (
-            <p className={"py-2 px-4 bg-green-500 rounded-xl"}>
-              {project.status}
+            <p
+              className={
+                "py-2 px-4 bg-green-500 rounded-xl"
+              }
+            >
+              Available
             </p>
           ) : (
-            <p className={"py-2 px-4 bg-red-500 rounded-xl"}>
-              {project.status}
+            <p
+              className={"py-2 px-4 bg-red-500 rounded-xl"}
+            >
+              Under Maintenance
             </p>
           )}
         </div>
-        <p className={"opacity-70 italic text-[12px]"}>{project.duration}</p>
+        <p className={"opacity-70 italic text-[12px]"}>
+          {project.duration}
+        </p>
         <div className={"flex items-center gap-3"}>
-          <p className={"opacity-70 italic"}>Designed and Developed by: </p>
+          <p className={"opacity-70 italic"}>
+            Designed and Developed by:{" "}
+          </p>
           <p className={"uppercase"}>{project.author}</p>
         </div>
         <p className={"text-2xl"}>{project.description}</p>
@@ -57,13 +74,18 @@ const ProjectCard = ({ project }: Props) => {
             variant={"contained"}
             fullWidth
           >
-            <Globe size={20} className={"mr-3"} /> {project.title} Website
+            <Globe size={20} className={"mr-3"} />{" "}
+            {project.title} Website
           </Button>
         </Link>
         <div>
           {project.githubUrls.map((url, i) => (
             <Link href={url} key={i}>
-              <Button className={"my-3"} variant={"outlined"} fullWidth>
+              <Button
+                className={"my-3"}
+                variant={"outlined"}
+                fullWidth
+              >
                 <Github size={20} /> Link {i + 1}
               </Button>
             </Link>

@@ -16,11 +16,13 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 3.9%;
 
-  --primary-code: 181, 255, 44;
+  color: rgb(44, 248, 255);
+
+  --primary-code: 44, 248, 255;
   --primary-foreground: 0 0% 98%;
 
   --secondary-code: 254, 217, 183;
-  /* color: rgb(44, 248, 255); */
+
   --secondary-foreground: 0 0% 9%;
 
   --muted: 0 0% 96.1%;

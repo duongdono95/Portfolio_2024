@@ -5,7 +5,7 @@ import React from "react";
 
 const SectionContact = () => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper id="contact">
       <SectionTitle title="Contact Me" />
       <p className="pt-5 text-center max-w-96 w-full mx-auto text-[22px]">
         Thanks for visiting my Portfolio,
