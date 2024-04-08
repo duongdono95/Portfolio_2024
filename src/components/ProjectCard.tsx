@@ -86,7 +86,8 @@ const ProjectCard = ({ project }: Props) => {
                 variant={"outlined"}
                 fullWidth
               >
-                <Github size={20} /> Link {i + 1}
+                <Github size={20} className="mr-2" /> Link{" "}
+                {i + 1}
               </Button>
             </Link>
           ))}

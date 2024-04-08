@@ -205,8 +205,9 @@ html *::-webkit-scrollbar-track {
   background: radial-gradient(
     circle,
     var(--primary) 0%,
-    var(--secondary05) 40%,
-    rgba(255, 255, 255, 0) 80%,
+    var(--primary05) 20%,
+    var(--secondary03) 40%,
+    rgba(255, 255, 255, 0) 70%,
     rgba(255, 255, 255, 0) 100%
   );
 }

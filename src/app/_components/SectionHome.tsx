@@ -89,13 +89,13 @@ const SectionHome = () => {
       <GradientBall
         top={-8}
         left={-13}
-        color="var(--primary07)"
+        color="var(--primary05)"
       />
       <GradientBall
         right={8}
         top={30}
         scale={1.3}
-        color="var(--secondary)"
+        color="var(--secondary05)"
       />
       <MaxWidthWrapper className="py-24  flex max-xl:flex-wrap justify-center items-center gap-14">
         <div className="w-1/2 relative max-h-[500px] min-w-96 min-h-96 ">
